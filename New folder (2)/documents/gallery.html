@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styleHeader.css">
+    <link rel="stylesheet" href="../css/styleFooter.css">
+    <link rel="stylesheet" href="../css/styleGallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="header-desktop-logo"><h1>DesktopLogga</h1></a>
+        <a href="#" class="header-mobile-logo"><h1>MobilLogga</h1></a>
+        <nav class="header-link-wrapper">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#">Gallery</a>
+        </nav>
+        <div class="header-menu-button">
+            <div class="header-menu-button-burger"></div>
+        </div>
+    </header>
+    <div class="header-mobile-menu">
+        <nav class="header-mobile-link-wrapper">
+            <a class="header-mobile-link" href="../index.html">Home</a>
+            <a class="header-mobile-link" href="./about.html">About</a>
+            <a class="header-mobile-link" href="./contact.html">Contact</a>
+            <a class="header-mobile-link" href="./portfolio.html">Portfolio</a>
+            <a class="header-mobile-link" href="#">Gallery</a>
+        </nav>
+    </div>
+
+
+
+    <section id="gallery-section">
+        <div id="gallery-text-wrapper">
+            <h2>G-8</h2><h1>Gallery</h1>
+        </div>
+        <div id="gallery-image-container">
+            <main id="gallery-image-wrapper"></main> 
+        </div>
+        <div id="gallery-lightbox-wrapper">
+            <div id="gallery-preserve-width">
+                <div class="gallery-close-wrapper">
+                    <i class="fa fa-times-circle" onclick="closeLightbox()"></i>
+                </div>
+                <div id="gallery-main-image-wrapper">
+                    <img id="gallery-main-image" src="" alt="">
+                    <span id="gallery-main-image-text" alt=""></span>
+                    <i id="gallery-prev-button" class="fa fa-arrow-circle-left" onclick="prevImg()"></i>
+                    <i id="gallery-next-button" class="fa fa-arrow-circle-right" onclick="nextImg()"></i>
+                </div>
+                <div id="gallery-thumbnails-wrapper"></div>
+            </div>
+        </div>
+        <div id="gallery-contact-wrapper">
+            <a href="../documents/contact.html" id="gallery-contact">Contact us</a>
+        </div>
+     </section>
+
+
+
+    <footer>
+        <section id="footer-social-section">
+        <div class="footer-social-icons-wrapper">
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-social-other">
+            <a id="footer-contact-mail" href="mailto:generic@gmail.com">E-mail</a>
+            <a id="footer-tel" href="tel:0123456789">Call us</a>    
+        </div>
+        <div>
+            <p id="footer-copyright"> © 2021 Grupp 8 inc. All rights reserved.</p>
+        </div>
+    </section>
+    </footer>
+
+<script src="../mobileMenu.js"></script>
+<script src="../javascript/gallery.js"></script>
+</body>
+</html>

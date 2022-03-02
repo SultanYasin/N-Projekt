@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/styleHeader.css">
+    <link rel="stylesheet" href="../css/styleFooter.css">
+    <link rel="stylesheet" href="../css/styleContact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="header-desktop-logo"><h1>DesktopLogga</h1></a>
+        <a href="#" class="header-mobile-logo"><h1>MobilLogga</h1></a>
+        <nav class="header-link-wrapper">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./gallery.html">Gallery</a>
+        </nav>
+        <div class="header-menu-button">
+            <div class="header-menu-button-burger"></div>
+        </div>
+    </header>
+    <div class="header-mobile-menu">
+        <nav class="header-mobile-link-wrapper">
+            <a class="header-mobile-link" href="../index.html">Home</a>
+            <a class="header-mobile-link" href="./about.html">About</a>
+            <a class="header-mobile-link" href="#">Contact</a>
+            <a class="header-mobile-link" href="./portfolio.html">Portfolio</a>
+            <a class="header-mobile-link" href="./gallery.html">Gallery</a>
+        </nav>
+    </div>
+    <!-- HEADER OVANFÖR -->
+
+
+
+
+
+    <div id="page-content"> 
+        
+       
+
+        <form onsubmit="sendMessage(); return false;" id="message-form">
+            <div class="w3-container w3-center w3-animate-left">
+                <h2>Have any feedback? Want to leave us a message? <br> Feel free to contact us!<br/></h2>
+                <input id="email" placeholder="Example@email.com" required>
+            <p id="email-error"></p>
+            <input id="firstname" placeholder="Name" required>
+            <p id="firstname-error"></p>
+            <textarea id="message" placeholder="Your message here" minlength="10" required></textarea>
+            <p id="message-error"></p>
+            <button type="submit">Send</button>
+
+            </div>
+        
+            
+            
+        </form>
+    </div>
+    <div id="modal">
+        <span class="loader"></span>
+    </div>
+    <script src="../javascript/contact.js"></script>
+
+ 
+
+
+
+
+
+    <!-- FOOTER NEDANFÖR -->
+    <footer>
+        <section id="footer-social-section">
+        <div class="footer-social-icons-wrapper">
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-social-other">
+            <a id="footer-contact-mail" href="mailto:generic@gmail.com">E-mail</a>
+            <a id="footer-tel" href="tel:0123456789">Call us</a>    
+        </div>
+        <div>
+            <p id="footer-copyright"> © 2021 Grupp 8 inc. All rights reserved.</p>
+        </div>
+
+    </section>
+    </footer>
+
+<script src="../mobileMenu.js"></script>
+<script src="/contact.js"></script>
+</body>
+</html>

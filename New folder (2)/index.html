@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styleHeader.css">
+    <link rel="stylesheet" href="./css/styleFooter.css">
+    <link rel="stylesheet" href="./css/styleHome.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header-desktop-logo">
+            <h1>DesktopLogga</h1>
+        </a>
+        <a href="#" class="header-mobile-logo">
+            <h1> MobilLogga </h1>
+        </a>
+        <nav class="header-link-wrapper">
+            <a href="#">Home</a>
+            <a href="./documents/about.html">About</a>
+            <a href="./documents/contact.html">Contact</a>
+            <a href="./documents/portfolio.html">Portfolio</a>
+            <a href="./documents/gallery.html">Gallery</a>
+        </nav>
+        <div class="header-menu-button">
+            <div class="header-menu-button-burger"></div>
+        </div>
+    </header>
+    <div class="header-mobile-menu">
+        <nav class="header-mobile-link-wrapper">
+            <a class="header-mobile-link" href="#">Home</a>
+            <a class="header-mobile-link" href="./documents/about.html">About</a>
+            <a class="header-mobile-link" href="./documents/contact.html">Contact</a>
+            <a class="header-mobile-link" href="./documents/portfolio.html">Portfolio</a>
+            <a class="header-mobile-link" href="./documents/gallery.html">Gallery</a>
+        </nav>
+    </div>
+    <!-- HEADER OVANFÖR -->
+
+    <div id="home-placeholder-div">
+
+        <div class="txt-bx">
+            <h1>We are <span id="htext">G-8</span> </h1>
+            <h2>See what we can offer </h2>
+
+            <div class="btns">
+                <a href="./documents/contact.html" class="conBtn">Contact us</a>
+
+                <a href="./documents/portfolio.html" class="p-btn">Our projects</a>
+            </div>
+        </div>
+        <!-- <img src="./media/8-1.jpg" alt="logo" class="home-logo"> -->
+    </div>
+
+
+    <section class="wrapper-container">
+        <video src="./media/Matrix.mp4" class="wrapper-video" autoplay muted loop></video>
+        <div class="wrapper">
+            <div class="img-area">
+                <p class="wrapper-heading">Lorem, ipsum dolor.</p>
+                <div class="single-img  img2">
+                    <img src="./media/2.jpg" alt="Programering">
+                    <h3>Problems solving</h3>
+                </div>
+                <div class="single-img  img3"><img src="./media/3.jpg" alt="Programering">
+                    <h3>HTML</h3>
+                </div>
+                <div class="single-img  img4"><img src="./media/4.jpg" alt="Programering">
+                    <h3>CSS</h3>
+                </div>
+                <div class="single-img  img5"><img src="./media/5.jpg" alt="Programering">
+                    <h3>JS</h3>
+                </div>
+                <div class="single-img  img6"><img src="./media/6.jpg" alt="Programering">
+
+                    <h3>JAVA</h3>
+                </div>
+                <div class="single-img  img7"> <img src="./media/7.png" alt="Programering">
+                    <h3>REACT</h3>
+                </div>
+            </div>
+            <button href="#services-section" class="btn" onclick="toggle()">More info ?</button>
+        </div>
+
+    </section>
+
+
+    <section id="services-section">
+        <div class="service">
+            <h2>Problems solving</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste odit ad minima voluptate ex nihil!
+            </p>
+        </div>
+        <br>
+        <div class="service">
+            <h2>HTML</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sed omnis dolorum quia provident autem!
+            </p>
+        </div>
+        <div class="service">
+            <h2>CSS</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores eos aut, nisi recusandae
+                eaque.
+            </p>
+        </div>
+        <div class="service">
+            <h2>JS</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga dolores delectus earum, libero
+                fugit!
+            </p>
+        </div>
+        <div class="service">
+            <h2>REACT</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tempora maxime, laborum asperiores
+                quae
+                soluta.
+            </p>
+        </div>
+        <div class="service">
+            <h2>JAVA</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tempora maxime, laborum asperiores
+                quae
+                soluta.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- FOOTER NEDANFÖR -->
+    <footer>
+        <section id="footer-social-section">
+            <div class="footer-social-icons-wrapper">
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="footer-social-other">
+                <a id="footer-contact-mail" href="mailto:generic@gmail.com">E-mail</a>
+                <a id="footer-tel" href="tel:0123456789">Call us</a>
+            </div>
+            <div>
+                <p id="footer-copyright"> © 2021 Grupp 8 inc. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./mobileMenu.js"></script>
+    <script src="./javascript/home.js"></script>
+
+
+</body>
+
+</html>

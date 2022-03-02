@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+.home-h1{
+     color: whitesmoke;
+    font-size: 80px;
+    position: absolute;
+    top: 25%; 
+} 
+.wrapper{
+    position: relative;
+    width: 320px;
+    margin: 150px auto;
+    perspective: 1000px;
+}
+.img-area{
+    position: absolute;
+    top: 20%;
+    margin-left: 10%;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-300px);
+    animation: animate 80s steps(10000, end) infinite;
+}
+
+.single-img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 200px;
+}
+.single-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.single-img.img2{transform: rotateY(0deg) translateZ(300px);}
+.single-img.img3{transform: rotateY(60deg) translateZ(300px);}
+.single-img.img4{transform: rotateY(120deg) translateZ(300px);}
+.single-img.img5{transform: rotateY(180deg) translateZ(300px);}
+.single-img.img6{transform: rotateY(240deg) translateZ(300px);}
+.single-img.img7{transform: rotateY(300deg) translateZ(300px);}
+    /* from which side the dives will turn */
+@keyframes animate{
+    from{transform: rotateY(-360deg);}
+    to{transform: rotateY(0deg);}
+}
